@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+
+	<head>
+	
+		<meta charset="utf-8"/>
+		<meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+		<title>Landpage</title>
+		<link href="css/style.css" rel="stylesheet"/>
+		
+	</head>
+	<body>
+
+		<header>
+			<a href="#" class="logo">Logo</a>
+			<ul>
+				<li><a href="#" class="active">Casa</a></li>
+				<li><a href="#">Sobre</a></li>
+				<li><a href="#">Trabalho</a></li>
+				<li><a href="#">Contato</a></li>
+			</ul>
+		</header>
+
+		<section>
+			<img src="stars.png" id="ST">
+			<img src="moon.png" id="MO">
+			<img src="mountains_behind.png" id="MT">
+			<h2 id="TE">❤️</h2>
+			<a href="#sec" id="btn">Explore</a>
+			<img src="mountains_front.png" id="MF">
+			
+		</section>
+
+		<div class="sec" id="sec">
+
+			<h2>Test de Texto</h2>
+			<p>Isso é um teste de texte porque eu não sei o que escreve Isso é um teste de texte porque eu não sei o que escreve
+				Isso é um teste de texte porque eu não sei o que escreveIsso é um teste de texte porque eu não sei o que escreve
+				Isso é um teste de texte porque eu não sei o que escreve Isso é um teste de texte porque eu não sei o que escreve
+				Isso é um teste de texte porque eu não sei o que escreve Isso é um teste de texte porque eu não sei o que escreve <br><br>
+
+				Isso é um teste de texte porque eu não sei o que escreveIsso é um teste de texte porque eu não sei o que escreve
+				Isso é um teste de texte porque eu não sei o que escreveIsso é um teste de texte porque eu não sei o que escreve
+				Isso é um teste de texte porque eu não sei o que escreveIsso é um teste de texte porque eu não sei o que escreve
+				Isso é um teste de texte porque eu não sei o que escreve Isso é um teste de texte porque eu não sei o que escreve
+			</p>
+
+		</div>
+
+		<script>
+			let ST = document.getElementById('ST')
+			let MO = document.getElementById('MO')
+			let MT = document.getElementById('MT')
+			let TE = document.getElementById('TE')
+			let btn = document.getElementById('btn')
+			let MF = document.getElementById('MF')
+
+			window.addEventListener('scroll', function(){
+				let value = window.scrollY;
+				ST.style.left = value * 0.5 + 'px';
+				MO.style.top = value * 1.05 + 'px';
+				MT.style.top = value * 0.5 + 'px';
+				MF.style.top = value * 0 + 'px';
+				TE.style.marginRight = value * 4 + 'px';
+				btn.style.marginTop = value * 1.5 + 'px';
+				
+				
+			})
+		</script>
+
+	</body>
+</html>
